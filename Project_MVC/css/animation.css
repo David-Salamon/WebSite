@@ -1,0 +1,48 @@
+.fa {
+    color: #fff;
+    animation: ikona 3s ease-in-out alternate infinite;
+}
+
+/* Header animacija */
+#main-header .content .naslov {
+    transform: translateY(-1100px);
+    animation: naslov 2s forwards ease-in-out;
+}
+
+#main-header .content p {
+    transform: translateX(-1200px);
+    animation: text 2s forwards ease-in-out;
+}
+
+#main-header .content .buttn {
+    transform: translateX(1300px);
+    animation: butn1 2s forwards ease-in-out;
+}
+
+@keyframes ikona {
+    0% {
+        transform: translateY(0%);
+    }
+    50% {
+        transform: translateY(10%);
+    }
+    100% {
+        transform: translateY(-10%);
+    }
+}
+
+@keyframes naslov {
+    to{ transform: translateY(0); }
+}
+
+@keyframes text {
+    to { transform: translateX(0); }
+}
+
+@keyframes butn1 {
+    to { transform: translateX(0); }
+}
+
+
+
+
